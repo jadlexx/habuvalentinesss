@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <audio id="bgMusic" loop>
+    <source src="libulibong.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="heart-container"></div>
+
+    <div id="lock-screen">
+        <div class="glass-card">
+            <div class="lock-icon"><span class="heart-pulse">❤</span></div>
+            <h2>Yours, Truly.</h2>
+            <p>A small piece of my heart, for the one who holds the key.</p>
+            
+            <div class="input-group">
+                <input type="password" id="password-input" placeholder="Enter our anniversary to unlock." autofocus>
+                <div id="togglePassword" class="toggle-eye">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                    </svg>
+                </div>
+            </div>
+
+            <button class="unlock-btn" onclick="checkPassword()">OPEN GIFT</button>
+            <p id="error-msg" class="error-text">That's not it, try again...</p>
+        </div>
+    </div>
+
+    <div id="envelope-overlay" style="display: none;">
+        <div class="envelope-wrapper" onclick="openEnvelope()">
+            <div class="envelope" id="main-envelope">
+                <div class="heart-seal">❤</div>
+            </div>
+            <p class="click-me">Click to open your gift!</p>
+        </div>
+    </div>
+
+    <div id="main-content-wrapper" style="display: none;">
+        <header>
+            <div class="header-content">
+                <p class="recipient-name">To my forever favorite, aliksatot</p>
+
+                <h1 class="shimmer-title">Happy Valentine's Day</h1>
+                <p id="intro-greet">to the most beautiful person ever</p>
+                <div class="scroll-container">
+                    <p class="scroll-text">Scroll down to see our best times together...</p>
+                    <div class="heart-icon pulse">❤</div>
+                </div>
+            </div>
+        </header>
+
+        <div class="moment-container">
+            <div class="moment">
+                <div class="photo-frame"><img src="/images/1.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>SUBT</h3>
+                    <p>MISIJ</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="/images/2.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>SUBT/h3>
+                    <p>MISIJ</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/3.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>SUBT</h3>
+                    <p>It doesn't matter where we go, as long as I'm with you. Anywhere is home when I am with you.</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/4.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>SUBT</h3>
+                    <p>I feel safe and happy when you hold me in your arms.</p>
+                </div>
+            </div>
+
+            <div class="moment">
+                <div class="photo-frame"><img src="images/5.jpg" alt="Us"></div>
+                <div class="text-content">
+                    <h3>SUBT</h3>
+                    <p>MY JWEL JEWEL JEWLE JEWLEWJE WJEWJE JWEJWEJWJEJJEAW</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="typing-container">
+            <p id="typing-text"></p>
+        </div>
+
+        <footer>
+            <p>You will always be my favorite person. <span class="heart-red">❤</span></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
